@@ -72,6 +72,8 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+.DS_Store
+
 # dotenv environment variable files
 .env
 .env.development.local
