@@ -15,7 +15,7 @@ const myTokenAbi = TOKEN_ABI
 function App() {
 	const { ready, authenticated, user, login, logout } = usePrivy();
 	const { wallets } = useWallets()
-	const [apiKey, setApiKey] = useState("QHwi_k_YbdrfCOkTaRTNtx0bJWwhS0Hf_iJdT0mDd1E_");
+	const [apiKey, setApiKey] = useState(process.env.REACT_APP_RELAY_API_KEY);
 	const [signer, setSigner] = useState(null);
 	const [provider, setProvider] = useState(null);
 	const [permitResponse, setPermitResponse] = useState(null);
